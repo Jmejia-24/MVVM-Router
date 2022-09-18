@@ -8,7 +8,8 @@
 import UIKit
 
 final class AppRouter {
-    private var coordinatorRegister: [Transition: Coordinator] = [.showMainScreen: PostListCoordinator()]
+    private var coordinatorRegister: [Transition: Coordinator] = [.showMainScreen: PostListCoordinator(),
+                                                                    .showPostDetail: PostDetailCoordinator()]
     let navigationViewController = UINavigationController()
 
     func start() {

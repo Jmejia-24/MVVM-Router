@@ -38,4 +38,8 @@ final class PostListViewModel {
             .sink(receiveCompletion: completion, receiveValue: receivedPosts)
             .store(in: &cancellables)
     }
+    
+    func didTapItem(model: Post) {
+        transitionDelegate?.process(transition: .showPostDetail, with: model)
+    }
 }

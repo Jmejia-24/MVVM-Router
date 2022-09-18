@@ -66,7 +66,7 @@ final class PostListViewController: UITableViewController {
             let cell = UITableViewCell()
             var configuration = cell.defaultContentConfiguration()
             
-            configuration.text = post.title?.capitalized
+            configuration.text = post.title
             cell.contentConfiguration = configuration
 
             return cell
@@ -79,5 +79,11 @@ final class PostListViewController: UITableViewController {
         snapshot.appendSections(Section.allCases)
         Section.allCases.forEach { snapshot.appendItems(posts, toSection: $0) }
         dataSource.apply(snapshot)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let post = dataSource.itemIdentifier(for: indexPath) else { return }
+        viewModel.didTapItem(model: post)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

@@ -13,4 +13,5 @@ protocol TransitionDelegate: AnyObject {
 
 enum Transition {
     case showMainScreen
+    case showPostDetail
 }
