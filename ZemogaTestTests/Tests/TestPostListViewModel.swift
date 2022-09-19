@@ -13,7 +13,7 @@ class TestPostListViewModel: XCTestCase {
         super.setUp()
     }
     
-    func testLoadFoodDishes() throws {
+    func testLoadPosts() throws {
         let postStore: PostListStore = APIManagerMock()
         let viewModel = PostListViewModel(store: postStore)
         viewModel.loadData()
