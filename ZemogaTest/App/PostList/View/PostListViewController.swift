@@ -58,11 +58,12 @@ final class PostListViewController: UITableViewController {
         }
         
         let button = UIBarButtonItem(systemItem: .trash, primaryAction: action)
+        button.tintColor = .red
         return button
     }()
     
     private func setUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .tertiarySystemBackground
         title = "Posts"
         navigationItem.rightBarButtonItems  = [trashBarButtonItem, refreshBarButtonItem]
         viewModel.loadData()
@@ -130,6 +131,7 @@ extension PostListViewController {
     private func configureDataSource() {
         dataSource = DataSource(tableView: tableView) { [unowned self] _, _, post -> UITableViewCell? in
             let cell = UITableViewCell()
+            cell.backgroundColor = .tertiarySystemBackground
             var configuration = cell.defaultContentConfiguration()
             
             configuration.text = post.title

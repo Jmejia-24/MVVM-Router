@@ -114,12 +114,6 @@ final class PostDetailView: UIView {
     }
 }
 
-extension PostDetailView: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-}
-
 extension PostDetailView: ViewCodeProtocol {
     
     func setupHierarchy() {
@@ -134,7 +128,7 @@ extension PostDetailView: ViewCodeProtocol {
         containerStackView.addArrangedSubview(titlePost)
         containerStackView.addSpacing(8)
         containerStackView.addArrangedSubview(descriptionPost)
-        containerStackView.addSpacing(8)
+        containerStackView.addSpacing(18)
         containerStackView.addArrangedSubview(captionComment)
         containerStackView.addSpacing(18)
         containerStackView.addArrangedSubview(commentListView)
@@ -164,7 +158,7 @@ extension PostDetailView: ViewCodeProtocol {
     }
     
     func additionalSetup() {
-        backgroundColor = .white
+        backgroundColor = .tertiarySystemBackground
         setUI()
     }
 }
