@@ -18,14 +18,14 @@ protocol PostDetailStore {
 }
 
 final class APIManager {
-    static let serviceURL = "https://jsonplaceholder.typicode.com/"
+    let serviceURL = "https://jsonplaceholder.typicode.com/"
 }
 
 extension APIManager: PostListStore {
     func fetchPost() -> Future<[Post], Failure> {
         let postPath = "posts"
         return Future { promise in
-            guard let url = URL(string: APIManager.serviceURL + postPath) else {
+            guard let url = URL(string: self.serviceURL + postPath) else {
                 promise(.failure(.urlConstructError))
                 return
             }
@@ -51,7 +51,7 @@ extension APIManager: PostDetailStore {
     func readUser(for userId: Int) -> Future<User, Failure> {
         let path = "users/\(userId)"
         return Future { promise in
-            guard let url = URL(string: APIManager.serviceURL + path) else {
+            guard let url = URL(string: self.serviceURL + path) else {
                 promise(.failure(.urlConstructError))
                 return
             }
@@ -75,7 +75,7 @@ extension APIManager: PostDetailStore {
     func readComments(for postId: Int) -> Future<[Comment], Failure> {
         let path = "comments?postId=\(postId)"
         return Future { promise in
-            guard let url = URL(string: APIManager.serviceURL + path) else {
+            guard let url = URL(string: self.serviceURL + path) else {
                 promise(.failure(.urlConstructError))
                 return
             }

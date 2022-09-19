@@ -13,6 +13,15 @@ struct Post: Codable, Hashable {
     let title: String?
     let body: String?
 
+    var isFavorite: Bool {
+        get {
+            return UserDefaults.standard.bool(forKey: "\(id ?? 0)")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "\(id ?? 0)")
+        }
+    }
+    
     enum CodingKeys: String, CodingKey {
         case userId = "userId"
         case id = "id"

@@ -44,7 +44,6 @@ final class PostDetailView: UIView {
     private lazy var commentListView: UITableView = {
         let list = UITableView(frame: .zero, style: .insetGrouped)
         list.translatesAutoresizingMaskIntoConstraints = false
-        list.delegate = self
         list.showsVerticalScrollIndicator = false
         list.layer.cornerRadius = 10
         return list
@@ -95,6 +94,7 @@ final class PostDetailView: UIView {
         let dataSource = DataSource(tableView: commentListView) { [unowned self] _, _, comment -> UITableViewCell in
             
             let cell = UITableViewCell()
+            cell.selectionStyle = .none
             var configuration = cell.defaultContentConfiguration()
             
             configuration.text = comment.name
