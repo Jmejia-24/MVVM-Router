@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		303B285328D594720046C51D /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B285228D594720046C51D /* PostDetailViewModel.swift */; };
-		303B285828D595950046C51D /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B285428D595950046C51D /* Geo.swift */; };
-		303B285928D595950046C51D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B285528D595950046C51D /* User.swift */; };
-		303B285A28D595950046C51D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B285628D595950046C51D /* Company.swift */; };
-		303B285B28D595950046C51D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B285728D595950046C51D /* Address.swift */; };
-		303B285D28D5977D0046C51D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B285C28D5977D0046C51D /* Comment.swift */; };
 		303B285F28D59E270046C51D /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B285E28D59E270046C51D /* PostDetailViewController.swift */; };
 		303B286128D59F5D0046C51D /* PostDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B286028D59F5D0046C51D /* PostDetailCoordinator.swift */; };
 		303B286328D6199E0046C51D /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303B286228D6199E0046C51D /* PostDetailView.swift */; };
@@ -38,6 +33,11 @@
 		30A9675528CCF1C6006EA4D1 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9675428CCF1C6006EA4D1 /* Failure.swift */; };
 		30A9675728CCF1F6006EA4D1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9675628CCF1F6006EA4D1 /* APIManager.swift */; };
 		30A9675A28CCF5E6006EA4D1 /* UIAlertController+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9675928CCF5E6006EA4D1 /* UIAlertController+Builder.swift */; };
+		C83FD6BB28EEA5DA0063A405 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FD6BA28EEA5DA0063A405 /* User.swift */; };
+		C83FD6BD28EEA65B0063A405 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FD6BC28EEA65B0063A405 /* Company.swift */; };
+		C83FD6BF28EEA6DC0063A405 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FD6BE28EEA6DC0063A405 /* Address.swift */; };
+		C83FD6C128EEA70B0063A405 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FD6C028EEA70B0063A405 /* Geo.swift */; };
+		C83FD6C328EEA7680063A405 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83FD6C228EEA7680063A405 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +59,6 @@
 
 /* Begin PBXFileReference section */
 		303B285228D594720046C51D /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
-		303B285428D595950046C51D /* Geo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Geo.swift; path = ../../../../../../Documents/codegen_63255de104ffa/Geo.swift; sourceTree = "<group>"; };
-		303B285528D595950046C51D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../../../../../Documents/codegen_63255de104ffa/User.swift; sourceTree = "<group>"; };
-		303B285628D595950046C51D /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = ../../../../../../Documents/codegen_63255de104ffa/Company.swift; sourceTree = "<group>"; };
-		303B285728D595950046C51D /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = ../../../../../../Documents/codegen_63255de104ffa/Address.swift; sourceTree = "<group>"; };
-		303B285C28D5977D0046C51D /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = ../../../../../../Documents/Comment.swift; sourceTree = "<group>"; };
 		303B285E28D59E270046C51D /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		303B286028D59F5D0046C51D /* PostDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailCoordinator.swift; sourceTree = "<group>"; };
 		303B286228D6199E0046C51D /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
@@ -93,6 +88,11 @@
 		30A9675428CCF1C6006EA4D1 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
 		30A9675628CCF1F6006EA4D1 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		30A9675928CCF5E6006EA4D1 /* UIAlertController+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Builder.swift"; sourceTree = "<group>"; };
+		C83FD6BA28EEA5DA0063A405 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C83FD6BC28EEA65B0063A405 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		C83FD6BE28EEA6DC0063A405 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		C83FD6C028EEA70B0063A405 /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
+		C83FD6C228EEA7680063A405 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				303B286028D59F5D0046C51D /* PostDetailCoordinator.swift */,
-				303B285128D593EC0046C51D /* Model */,
+				C83FD6B928EEA5610063A405 /* Model */,
 				303B285028D593E20046C51D /* View */,
 				303B284F28D593D90046C51D /* ViewModel */,
 			);
@@ -147,18 +147,6 @@
 				303B286428D61A380046C51D /* PostDetailDescriptionView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		303B285128D593EC0046C51D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				303B285C28D5977D0046C51D /* Comment.swift */,
-				303B285728D595950046C51D /* Address.swift */,
-				303B285628D595950046C51D /* Company.swift */,
-				303B285428D595950046C51D /* Geo.swift */,
-				303B285528D595950046C51D /* User.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		305E30C328D8B6B400CEAC7A /* ZemogaTestTests */ = {
@@ -345,6 +333,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C83FD6B928EEA5610063A405 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C83FD6BA28EEA5DA0063A405 /* User.swift */,
+				C83FD6BC28EEA65B0063A405 /* Company.swift */,
+				C83FD6BE28EEA6DC0063A405 /* Address.swift */,
+				C83FD6C028EEA70B0063A405 /* Geo.swift */,
+				C83FD6C228EEA7680063A405 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -496,28 +496,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A9674C28CCEE19006EA4D1 /* PostListViewController.swift in Sources */,
+				C83FD6C328EEA7680063A405 /* Comment.swift in Sources */,
 				303B286528D61A380046C51D /* PostDetailDescriptionView.swift in Sources */,
 				30A9675528CCF1C6006EA4D1 /* Failure.swift in Sources */,
+				C83FD6BD28EEA65B0063A405 /* Company.swift in Sources */,
 				30A9675728CCF1F6006EA4D1 /* APIManager.swift in Sources */,
 				30A9674028CCEB4A006EA4D1 /* Coordinator.swift in Sources */,
-				303B285828D595950046C51D /* Geo.swift in Sources */,
-				303B285928D595950046C51D /* User.swift in Sources */,
+				C83FD6BF28EEA6DC0063A405 /* Address.swift in Sources */,
+				C83FD6C128EEA70B0063A405 /* Geo.swift in Sources */,
 				303B286128D59F5D0046C51D /* PostDetailCoordinator.swift in Sources */,
 				30A9674E28CCEE72006EA4D1 /* PostListViewModel.swift in Sources */,
 				303B285328D594720046C51D /* PostDetailViewModel.swift in Sources */,
-				303B285A28D595950046C51D /* Company.swift in Sources */,
 				30A9675028CCF126006EA4D1 /* Post.swift in Sources */,
 				303B286328D6199E0046C51D /* PostDetailView.swift in Sources */,
 				30A9674228CCEBE0006EA4D1 /* TransitionDelegate.swift in Sources */,
 				303B286928D61BB40046C51D /* UIStackView+Spacing.swift in Sources */,
 				30A9675A28CCF5E6006EA4D1 /* UIAlertController+Builder.swift in Sources */,
-				303B285D28D5977D0046C51D /* Comment.swift in Sources */,
 				303B285F28D59E270046C51D /* PostDetailViewController.swift in Sources */,
 				303B286728D61B800046C51D /* ViewCodeProtocol.swift in Sources */,
 				30A9674A28CCED82006EA4D1 /* PostListCoordinator.swift in Sources */,
 				30A9674428CCEBF2006EA4D1 /* AppRouter.swift in Sources */,
-				303B285B28D595950046C51D /* Address.swift in Sources */,
 				30A9672928CCE908006EA4D1 /* AppDelegate.swift in Sources */,
+				C83FD6BB28EEA5DA0063A405 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
